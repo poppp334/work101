@@ -1,7 +1,11 @@
 # Paperfold / กระดาษพับ — Online Bookstore POC
 
 ## Status
-**Built and verified** on the production build. Dev server runs on `http://localhost:5173`.
+**Built, verified, and deployed** to GitHub Pages.
+
+- Live: https://poppp334.github.io/work101/
+- Repo: https://github.com/poppp334/work101
+- Deploy: GitHub Actions workflow on every push to `main`
 
 ## Locked decisions
 | Topic | Decision |
@@ -28,7 +32,8 @@
 - No checkout, auth, or payment (out of scope)
 - Prices, publishers, blurbs and staff notes are demo copy
 - Only one book (Naruto vol. 1) uses the house jacket; the rest have real covers
-- Local dev only, not deployed
+- Deep links on GitHub Pages return HTTP 404 status but render correctly
+  (the SPA fallback is `404.html`, a copy of `index.html`)
 
 ## Commands
 `npm run dev` · `npm run build` · `npm run preview` · `npm run catalog` · `npm run covers`
